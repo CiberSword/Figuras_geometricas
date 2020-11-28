@@ -9,14 +9,10 @@ public class PruebaFigurasGeometricas {
          * abstracta Poligono. Al trabajarlas de esta manera no es posible invocar alguno de los métodos que no
          * hayan sido declarados fuerda de la clase Poligono.
          */
-        Poligono cuadrado = new Cuadrado();
-        System.out.println("Soy un "+cuadrado.toString());
-
         Poligono rombo = new Rombo();
         System.out.println("Soy un "+rombo.toString());
 
-        Poligono triangulo = new TrianguloEscaleno();
-        System.out.println("Soy un "+triangulo.toString());
+        //rombo.setDiagonalMayor(); Método no contenido en la clase Poligono. No puede ser invocado.
 
         /**Creación de referencias de las subclases Cuadrado, Rombo y TrianguloEscaleno a partir de las clases
          * abstractas Cuadrilatero y Triangulo. A partir de este momento, ya podemos comenzar a manipular un
@@ -34,11 +30,8 @@ public class PruebaFigurasGeometricas {
         System.out.println("Altura: "+cuadrado2.getAltura());
         System.out.println("Base: "+cuadrado2.getBase());
 
-        System.out.println();
-        Cuadrilatero rombo2 = new Rombo();
-        System.out.println("Soy un "+rombo2.toString());
+        //cuadrado2.getAngulos(); Método contenido en la clase Cuadrado, pero no en la clase Cuadrilatero.
 
-        Triangulo triangulo2 = new TrianguloEscaleno();
-        System.out.println("Soy un "+triangulo2.toString());
+
     }
 }
