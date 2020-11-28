@@ -29,6 +29,18 @@ public abstract class Triangulo extends Poligono {
         this.gamma = gamma;
     }
 
+    public double getA(){ return a; }
+
+    public void setA(double a){ this.a = a; }
+
+    public double getB(){ return b; }
+
+    public void setB(double b){ this.b = b; }
+
+    public double getC(){ return c; }
+
+    public void setC(double c){ this.c = c; }
+
     public double getLadoA() {
         return ladoA;
     }
@@ -60,4 +72,7 @@ public abstract class Triangulo extends Poligono {
     public double leySeno(double ladoA, double alpha, double beta) {
         return (Math.sin(beta) * ladoA) / Math.sin(alpha);
     }
+
+    public abstract void ConvAngARad();
+    public abstract void ConvRadAAng();
 }

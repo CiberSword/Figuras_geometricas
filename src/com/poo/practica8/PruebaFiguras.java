@@ -20,6 +20,16 @@ public class PruebaFiguras {
         System.out.println("Se vuelve a usar la funcion para obtener el lado C");
         trianguloPrueba.setLadoC(trianguloPrueba.leySeno(trianguloPrueba.getLadoA(), trianguloPrueba.getAlpha(), trianguloPrueba.getGamma()));
 
+        trianguloPrueba.ConvAngARad();
+        System.out.println("Angulo Alpha: "+ trianguloPrueba.getAlpha() +"\tAngulo Alpha en Radianes: "+trianguloPrueba.getA());
+        System.out.println("Angulo Beta: "+ trianguloPrueba.getBeta() +"\tAngulo Beta en Radianes: "+trianguloPrueba.getB());
+        System.out.println("Angulo Gamma: "+ trianguloPrueba.getGamma() +"\tAngulo Gamma en Radianes: "+trianguloPrueba.getC());
+
+
+        trianguloPrueba.imprimirDatos();
+
+        trianguloPrueba.ConvRadAAng();
+
         trianguloPrueba.imprimirDatos();
     }
 }

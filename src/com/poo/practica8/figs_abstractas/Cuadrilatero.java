@@ -29,6 +29,7 @@ public abstract class Cuadrilatero extends Poligono {
     }
 
 
+
     @Override
     public double area() {
         return lado * lado;
@@ -38,6 +39,9 @@ public abstract class Cuadrilatero extends Poligono {
     public double perimetro() {
         return lado * 4;
     }
+
+    public abstract void ConvAngARad();
+    public abstract void ConvRadAAng();
 
     public String toString() {
         return "Cuadrilatero";
