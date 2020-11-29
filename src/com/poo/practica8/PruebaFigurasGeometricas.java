@@ -40,11 +40,11 @@ public class PruebaFigurasGeometricas {
         //System.out.println("Perimetro: "+cuadrado2.perimetro()+" [cm]");
 
         Cuadrilatero rombo2 = new Rombo();
-        System.out.println("\nSoy un"+rombo2.toString());
+        System.out.println("\nSoy un "+rombo2.toString());
 
         rombo2.setLado(6);
-        cuadrado2.setAltura(2); //La altura en el rombo corresponde a la DiagonalMayor.
-        cuadrado2.setBase(5); //La base en el rombo corresponde a la DIagonalMenor.
+        rombo2.setAltura(2); //La altura en el rombo corresponde a la DiagonalMayor.
+        rombo2.setBase(5); //La base en el rombo corresponde a la DIagonalMenor.
 
         System.out.println("Lado: "+rombo2.getLado());
         System.out.println("Altura: "+rombo2.getAltura());
