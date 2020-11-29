@@ -53,7 +53,7 @@ public class PruebaFigurasGeometricas {
         //System.out.println("Perimetro: "+rombo2.perimetro()+" [cm]");
 
         Triangulo triangulo2 = new TrianguloEscaleno();
-        System.out.println("\nSoy un"+triangulo2.toString());
+        System.out.println("\nSoy un "+triangulo2.toString());
 
         triangulo2.setLadoA(10);
         triangulo2.setLadoB(15);
