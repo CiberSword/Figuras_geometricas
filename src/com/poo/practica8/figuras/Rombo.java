@@ -10,8 +10,6 @@ public class Rombo extends Cuadrilatero {
 
     private double a,b;
 
-    private double diagonalMenor, diagonalMayor;
-
     public double getAlpha(){return Alpha;}
 
     public void setAlpha(double Alpha){ this.Alpha = Alpha; }
@@ -28,26 +26,12 @@ public class Rombo extends Cuadrilatero {
 
     public void setB(double b){ this.b = b; }
 
-    public double getDiagonalMenor() {
-        return diagonalMenor;
-    }
-
-    public void setDiagonalMenor(double diagonalMenor) {
-        this.diagonalMenor = diagonalMenor;
-    }
-
-    public double getDiagonalMayor() {
-        return diagonalMayor;
-    }
-
-    public void setDiagonalMayor(double diagonalMayor) {
-        this.diagonalMayor = diagonalMayor;
-    }
-
     @Override
     public double area() {
-        return (diagonalMayor * diagonalMenor) / 2;
+        return (getBase() * getAltura()) / 2;
     }
+
+    public double perimetro(){ return getLado()*4; }
 
     public void ConvAngARad(){
         setA((double) getAlpha()*(AngulosARadianes.Pi/180));

@@ -22,6 +22,12 @@ public class Cuadrado extends Cuadrilatero {
         System.out.println("Angulos en Radianes a Angulos en grados: " + getA()*(180/RadianesAAngulos.Pi));
     }
 
+    public double area() {
+        return getLado() * getLado();
+    }
+
+    public double perimetro(){ return getLado() * 4; }
+    
     public String toString(){
         return "Cuadrado";
     }

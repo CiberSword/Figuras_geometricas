@@ -52,6 +52,7 @@ public class TrianguloEscaleno extends Triangulo {
 
     public void imprimirDatos() {
         System.out.printf("Lados A, B y C: %.2f , %.2f y %.2f", getLadoA(), getLadoB(), getLadoC());
+        System.out.println("\nArea: "+area()+"\nPerimetro: "+perimetro());
         System.out.println("\nAngulo Alpha: "+getAlpha()+"\nAngulo Beta: "+getBeta()+"\nAngulo Gamma: "+getGamma());
         System.out.println("Alpha en Radianes: "+getA()+"\nBeta en Radianes: "+getB()+"\nGamma en Radianes: "+getC());
     }
