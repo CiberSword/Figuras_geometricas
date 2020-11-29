@@ -35,7 +35,8 @@ public class PruebaFigurasGeometricas {
         System.out.println("Lado: "+cuadrado2.getLado());
         System.out.println("Altura: "+cuadrado2.getAltura());
         System.out.println("Base: "+cuadrado2.getBase());
-        //System.out.println("Area: "+cuadrado2.area()+" [cm]^2"); Clase abstracta desarrollada dentro de cada clase para su uso individual.
+        //System.out.println("Area: "+cuadrado2.area()+" [cm]^2"); Clase abstracta desarrollada dentro de cada clase
+        // para su uso individual.
         //System.out.println("Perimetro: "+cuadrado2.perimetro()+" [cm]");
 
         Cuadrilatero rombo2 = new Rombo();
@@ -65,10 +66,11 @@ public class PruebaFigurasGeometricas {
 
         //cuadrado2.getAngulos(); Método contenido en la clase Cuadrado, pero no en la clase Cuadrilatero.
 
-        /**Creación de referencias a partir de los objetos Cuadrado, Rombo y Triangulo Escaleno. De esta manera, ya tenemos acceso a cada metodo
-         * heredado y también definido dentro de cada clase.
+        /**Creación de referencias a partir de los objetos Cuadrado, Rombo y Triangulo Escaleno. De esta manera,
+         * ya tenemos acceso a cada metodo heredado y también definido dentro de cada clase.
          */
-        System.out.println("\n\nSe crea un triangulo cuyo lado a sea igual a 15[cm] y los angulos A,B y C sean 46,74 y 60 grados respectivamente");
+        System.out.println("\n\nSe crea un triangulo cuyo lado a sea igual a 15[cm] y los angulos A,B y C sean 46,74" +
+                " y 60 grados respectivamente");
         TrianguloEscaleno triangulo3 = new TrianguloEscaleno();
         System.out.println("Soy un "+triangulo.toString());
 
@@ -89,10 +91,12 @@ public class PruebaFigurasGeometricas {
         System.out.println("Obtenemos el valor de los angulos dados en grado, ahora en radianes.");
         triangulo3.ConvAngARad();
 
-        System.out.println("Imprimimos toda la información del Triangulo para verificar que se pueden manipular los valores de manera correcta.");
+        System.out.println("Imprimimos toda la información del Triangulo para verificar que se pueden manipular los " +
+                "valores de manera correcta.");
         triangulo3.imprimirDatos();
 
-        /**Copiamos la referencia del triangulo3 al 2. De esta manera, triangulo2 ya puede invocar métodos de la clase TrianguloEscaleno.*/
+        /**Copiamos la referencia del triangulo3 al 2. De esta manera, triangulo2 ya puede invocar métodos de la clase
+         * TrianguloEscaleno.*/
         triangulo2 = triangulo3;
 
         triangulo2.setGamma(29);
