@@ -78,8 +78,8 @@ public abstract class Triangulo extends Poligono {
     @Override
     public abstract double perimetro();
 
-    public double leySeno(double ladoA, double alpha, double beta) {
-        return (Math.sin(beta) * ladoA) / Math.sin(alpha);
+    public double leySeno(double ladoA, double a, double b) {
+        return (Math.sin(b) * ladoA) / Math.sin(a);
     }
 
     /**Métodos heredados de las interfaces*/
