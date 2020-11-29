@@ -1,10 +1,12 @@
 package com.poo.practica8.figs_abstractas;
 
+/**Herencia de Clases*/
 public abstract class Triangulo extends Poligono {
     private double alpha, beta, gamma;    //Angulos en grados
     private double a, b, c;    // Angulos en radianes
     private double ladoA, ladoB, ladoC;
 
+    /**Metodos getters y setters*/
     public double getAlpha() {
         return alpha;
     }
@@ -65,14 +67,22 @@ public abstract class Triangulo extends Poligono {
         this.ladoC = ladoC;
     }
 
+    /**Sobreescritura del método toString de la clase Poligono*/
     public String toString() {
         return "Triangulo";
     }
+
+    @Override
+    public abstract double area();
+
+    @Override
+    public abstract double perimetro();
 
     public double leySeno(double ladoA, double alpha, double beta) {
         return (Math.sin(beta) * ladoA) / Math.sin(alpha);
     }
 
+    /**Métodos heredados de las interfaces*/
     public abstract void ConvAngARad();
     public abstract void ConvRadAAng();
 }

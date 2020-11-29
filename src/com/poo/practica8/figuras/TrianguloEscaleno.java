@@ -6,10 +6,12 @@ import com.poo.practica8.figs_abstractas.AngulosARadianes;
 import com.poo.practica8.figs_abstractas.RadianesAAngulos;
 import com.poo.practica8.figs_abstractas.Triangulo;
 
+/**Herencia de Clases*/
 public class TrianguloEscaleno extends Triangulo {
 
     private double base, altura;
 
+    /**Métodos getters y setters*/
     public double getBase() {
         return base;
     }
@@ -26,14 +28,17 @@ public class TrianguloEscaleno extends Triangulo {
         this.altura = altura;
     }
 
+    /**Sobreescritura del método area de la clase Poligono*/
     public double area() {
         return (base * altura) / 2;
     }
 
+    /**Sobreescritura del método perimetro de la clase Poligono*/
     public double perimetro() {
         return getLadoA() + getLadoB() + getLadoC();
     }
 
+    /**Implementación de los métodos de las interfaces*/
     public void ConvAngARad(){
         setA((double) getAlpha()*(AngulosARadianes.Pi/180));
         setB((double) getBeta()*(AngulosARadianes.Pi/180));
@@ -46,6 +51,7 @@ public class TrianguloEscaleno extends Triangulo {
         setGamma((double) getC()*(180/ RadianesAAngulos.Pi));
     }
 
+    /**Sobreescritura del método toString de la clase Poligono*/
     public String toString(){
         return "Triangulo Escaleno";
     }

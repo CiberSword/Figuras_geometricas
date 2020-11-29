@@ -99,5 +99,6 @@ public class PruebaFigurasGeometricas {
 
         System.out.println("Nuevo valor del angulo Gamma (De 60 a 29): "+triangulo2.getGamma());
 
+        /**Para el cuadrado y el rombo, sería el mismo manejo de datos que como se realizó con el Triangulo.*/
     }
 }
