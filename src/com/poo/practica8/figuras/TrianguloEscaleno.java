@@ -30,7 +30,7 @@ public class TrianguloEscaleno extends Triangulo {
 
     /**Sobreescritura del método area de la clase Poligono*/
     public double area() {
-        return (base * altura) / 2;
+        return (getBase() * getAltura()) / 2;
     }
 
     /**Sobreescritura del método perimetro de la clase Poligono*/

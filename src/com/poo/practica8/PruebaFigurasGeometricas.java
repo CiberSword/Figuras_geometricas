@@ -78,13 +78,13 @@ public class PruebaFigurasGeometricas {
         triangulo3.setBeta(74);
         triangulo3.setGamma(60);
 
-        triangulo3.setBase(triangulo3.getLadoC());
-        triangulo3.setAltura(9);
-
         System.out.println("Se utiliza la funcion leySeno para obtener el lado B");
         triangulo3.setLadoB(triangulo3.leySeno(triangulo3.getLadoA(), triangulo3.getAlpha(), triangulo3.getBeta()));
         System.out.println("Se vuelve a usar la funcion para obtener el lado C");
         triangulo3.setLadoC(triangulo3.leySeno(triangulo3.getLadoA(), triangulo3.getAlpha(), triangulo3.getGamma()));
+
+        triangulo3.setBase(triangulo3.getLadoC());
+        triangulo3.setAltura(9);
 
         System.out.println("Obtenemos el valor de los angulos dados en grado, ahora en radianes.");
         triangulo3.ConvAngARad();
